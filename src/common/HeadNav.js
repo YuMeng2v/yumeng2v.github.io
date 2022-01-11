@@ -12,8 +12,7 @@ export default class HeadNav extends Component{
             <div id="HeadNav">
                 <div className="nav-wrap">
                     <div className="nav-logo-wrap">
-                    {//<SmileOutlined type="global" className="nav-logo"></SmileOutlined>
-                    }
+                    <SmileOutlined type="global" className="nav-logo"></SmileOutlined>
                     </div>
                     <div className="nav-list-wrap">
                         <Menu mode="horizontal">
