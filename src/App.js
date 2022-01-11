@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
+import RouterWrap from './router'
+//入口文件
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div>
-          <h2>试一下直接部署</h2>
+          <RouterWrap/>
         </div>
       </header>
     </div>
   );
 }
-
 export default App;
