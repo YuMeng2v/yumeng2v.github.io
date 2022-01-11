@@ -1,62 +1,70 @@
-# Crablog
+# Getting Started with Create React App
 
-parksben's blog project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-适合前端开发人员的React轻博客
+## Available Scripts
 
-> This is a blog project developed with Create-React-App and other awesome projects in github.
+In the project directory, you can run:
 
-> You can use codes from this repository other than articles and images of my blog contents.
+### `yarn start`
 
-> 如有问题，可加微信：Xreaman，或在此项目提 issue 给我
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Demo
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-![parksben's blog](./preview.png)
+### `yarn test`
 
-我的博客：[矮大紧的日常](https://parksben.github.io)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 功能特性
+### `yarn build`
 
-* 纯JS实现的单页面应用
-* 线上环境为纯静态站点
-* 使用 `markdown` 格式编辑文章
-* 使用 `标签` 对文章进行分类，文章打包后自动分类
-* 一键打包全部文章内容（`ToDo`: 自动打包功能正在实现...）
-* 支持一键发布到 `github-page` ，也可 `build` 后部署到其他环境
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 开发环境
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* 建议开发环境：node.js v8.5.0 以上版本
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 使用说明
+### `yarn eject`
 
-### 1. 安装启动
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-* `clone` 本项目代码到你的本地目录
-  * 请不要保留我的文章内容（请删除在 `src/posts/` 目录下的所有文章目录）
-* 执行 `yarn` 命令安装全部依赖
-* 执行 `yarn start` 启动开发环境（http://localhost:3000）
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 2. 站点配置
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-* 编辑 `src/siteConfig/site.json` 文件为你的站点信息（记得修改头像）
-* 编辑 `public/manifest.json` 文件（pwa相关属性）
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### 3. 创建文章
+## Learn More
 
-* 执行 `yarn new-post` 命令创建新的文章目录（在 `src/posts/` 目录下）
-* 编辑你的文章，文章中引用的图片需放到相同的目录下
-* 执行 `yarn compile` 可随时打包文章，打包成功后可正常浏览该文章
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### 4. 发布到 github-page
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-* 编辑 `package.json` 文件中的 `homepage` 一项更改为你的 `github` 主页地址
-  * 如：https://parksben.github.io
-* 将本地代码 `push` 到你的 `github 博客仓库` 的 `blog` 分支（没有的话请创建一个）
-* 执行 `yarn deploy` 即可一键发布到您的 `github` 主页
+### Code Splitting
 
-### 5. 其他环境部署
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-* 线上执行 `yarn build` 命令，站点的所有静态资源将打包到 `build` 目录下
-* 将站点的入口配置到 `build` 目录下
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
