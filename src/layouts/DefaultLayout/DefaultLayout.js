@@ -1,9 +1,11 @@
 import {Component} from 'react';
+import HeadNav from '../../common/HeadNav'
+import './DefaultLayout.less'
 class DefaultLayout extends Component{
     render(){
         return (
             <div>
-                <h2>default123</h2>
+                <HeadNav/>
             </div>    
         )
     }
