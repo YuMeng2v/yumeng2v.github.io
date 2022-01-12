@@ -1,8 +1,10 @@
 import {Component} from 'react';
-class aboutme extends Component{
+import HeadNav from '../../common/HeadNav'
+class Aboutme extends Component{
     render(){
         return (
-            <div id="DefaultLayout">
+            <div id="aboutme">
+                <HeadNav/>
                 <div>
                     <h2>aboutme</h2>
                 </div>
@@ -10,4 +12,4 @@ class aboutme extends Component{
         )
     }
 }
-export default aboutme;
+export default Aboutme;

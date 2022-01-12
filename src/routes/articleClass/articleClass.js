@@ -1,13 +1,15 @@
 import {Component} from 'react';
-class articleClass extends Component{
+import HeadNav from '../../common/HeadNav';
+class ArticleClass extends Component{
     render(){
         return (
-            <div id="DefaultLayout">
+            <div id="article">
+                <HeadNav/> 
                 <div>
-                    <h2>Article</h2>
+                    <h2>articleClass</h2>
                 </div>
             </div>    
         )
     }
 }
-export default articleClass;
+export default ArticleClass;

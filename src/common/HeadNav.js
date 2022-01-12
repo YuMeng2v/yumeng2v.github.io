@@ -24,12 +24,13 @@ export default class HeadNav extends Component{
                                     <Link to="/">首页</Link>
                                 </Menu.Item>
                                 <Menu.Item key="aboutme">
+                                    <Link to="/aboutme">关于我</Link>
                                 </Menu.Item>
                                 <Menu.Item key="articles">
-                                    所有文章
+                                    <Link to="/articles">所有文章</Link>
                                 </Menu.Item>
                                 <Menu.Item key="articleClass">
-                                    文章分类
+                                    <Link to="/articleclass">文章分类</Link>
                                 </Menu.Item>
                         </Menu>
                     </div>

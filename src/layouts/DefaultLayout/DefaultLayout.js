@@ -11,22 +11,13 @@ class DefaultLayout extends Component{
         return (
             <div id="DefaultLayout">
                 <HeadNav/>
-                {//console.log(this.props.toString())
-                }
-                {/*
+                <h2>这是哪儿</h2>
                 <div>
-                    <Route path={this.props.match.url+'/'} component={home} exact/>
-                    <Route path={this.props.match.url+'/about'} component={aboutme}/>
-                    <Route path={this.props.match.url+'/articles'} component={articles} exact/>
-                    <Route path={this.props.match.url+'/articleclass'} component={articleClass}/>
-                </div>
-                */}
-                <div>
-                    <Routes>
+                <Routes>
                         <Route path='/' component={home} exact/>
-                        <Route path='/about' component={aboutme}/>
-                        <Route path='/articles' component={articles} exact/>
-                        <Route path='/articleclass' component={articleClass}/>
+                        <Route path='aboutme' component={aboutme}/>
+                        <Route path='articles' component={articles} exact/>
+                        <Route path='articleclass' component={articleClass}/>
                     </Routes>
                 </div>
             </div>    
