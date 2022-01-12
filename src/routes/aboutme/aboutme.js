@@ -79,6 +79,8 @@ class Aboutme extends Component{
                                                                     主要课程：计算金融，无人系统，UML设计与应用，多媒体计算，可视化分析
                                                                 </li>
                                                             </ul>
+                                                            </li>
+                                                            <li>
                                                             <p>上海交通大学（2017.9-2021.6）</p>
                                                             <ul>
                                                                 <li>电子工程系</li>
