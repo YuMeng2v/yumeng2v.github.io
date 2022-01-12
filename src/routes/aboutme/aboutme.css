@@ -1,0 +1,28 @@
+.td-with-padding {
+    padding: 20px;
+    width: 100%;
+}
+body, td, th, tr, p, a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#main-table {
+    width: 800px;
+    margin:0 auto;
+}
+.p-center a{
+    padding-left: 10px;
+}
+.p-center{
+    text-align: center;
+}
+.emphasis{
+    color: rgb(148, 71, 71);;
+}
+.nav-logo{
+    font-size:20px;
+}
+#daily-photo{
+    width: 200px;
+    height:175px;
+}
