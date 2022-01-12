@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import HeadNav from '../../common/HeadNav'
 import './DefaultLayout.less'
-import {Route} from 'react-router-dom';
+import {Route,Routes} from 'react-router-dom';
 import home from '../../routes/home/home';
 import articleClass from '../../routes/articleClass/articleClass';
 import articles from '../../routes/articles/articles';
@@ -11,7 +11,8 @@ class DefaultLayout extends Component{
         return (
             <div id="DefaultLayout">
                 <HeadNav/>
-                {console.log(this.props.toString())}
+                {//console.log(this.props.toString())
+                }
                 {/*
                 <div>
                     <Route path={this.props.match.url+'/'} component={home} exact/>
@@ -20,6 +21,14 @@ class DefaultLayout extends Component{
                     <Route path={this.props.match.url+'/articleclass'} component={articleClass}/>
                 </div>
                 */}
+                <div>
+                    <Routes>
+                        <Route path='/' component={home} exact/>
+                        <Route path='about' component={aboutme}/>
+                        <Route path='articles' component={articles} exact/>
+                        <Route path='/articleclass' component={articleClass}/>
+                    </Routes>
+                </div>
             </div>    
         )
     }
