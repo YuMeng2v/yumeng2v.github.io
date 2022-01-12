@@ -26,32 +26,14 @@ export default class HeadNav extends Component{
                                 <Menu.Item key="articles">
                                     所有文章
                                 </Menu.Item>
-                                <Menu.Item key="ArticleClass">
+                                <Menu.Item key="articleClass">
                                     文章分类
                                 </Menu.Item>
                         </Menu>
                     </div>
                 </div>
             </div>
-            {/*<div id="ButtonContent">
-            <div className="nav-list-wrap">
-                        <Menu mode="horizontal">
-                                <Menu.Item key="home">
-                                    Contact
-                                </Menu.Item>
-                                <Menu.Item key="aboutme">
-                                    联系我
-                                </Menu.Item>
-                                <Menu.Item key="articles">
-                                    所有文章
-                                </Menu.Item>
-                                <Menu.Item key="ArticleClass">
-                                    文章分类
-                                </Menu.Item>
-                        </Menu>
-                    </div>
-            </div>*/}
-                </div>
+        </div>
         )
     }
 }
