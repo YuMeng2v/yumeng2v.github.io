@@ -14,3 +14,6 @@ function App() {
   );
 }
 export default App;
+//routerwrap = router.js
+//so The corresponding component of the path should be defined there
+

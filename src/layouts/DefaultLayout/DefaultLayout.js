@@ -11,7 +11,6 @@ class DefaultLayout extends Component{
         return (
             <div id="DefaultLayout">
                 <HeadNav/>
-                <h2>这是哪儿</h2>
                 <div>
                 <Routes>
                         <Route path='/' component={home} exact/>

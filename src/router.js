@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 import {HashRouter, Route, Routes} from 'react-router-dom'
-import DefaultLayout from './layouts/DefaultLayout/DefaultLayout';
-import LoginUser from './layouts/LoginUser/LoginUser';
+//import DefaultLayout from './layouts/DefaultLayout/DefaultLayout';
+//import LoginUser from './layouts/LoginUser/LoginUser';
 import Home from './routes/home/home';
 import ArticleClass from './routes/articleClass/articleClass';
 import Articles from './routes/articles/articles';
@@ -22,3 +22,4 @@ export default class RouterWrap extends Component{
         )
     }
 }
+// export default RouterWrap
