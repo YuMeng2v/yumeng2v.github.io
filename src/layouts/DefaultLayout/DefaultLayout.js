@@ -24,8 +24,8 @@ class DefaultLayout extends Component{
                 <div>
                     <Routes>
                         <Route path='/' component={home} exact/>
-                        <Route path='about' component={aboutme}/>
-                        <Route path='articles' component={articles} exact/>
+                        <Route path='/about' component={aboutme}/>
+                        <Route path='/articles' component={articles} exact/>
                         <Route path='/articleclass' component={articleClass}/>
                     </Routes>
                 </div>

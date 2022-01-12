@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
 import {Menu} from 'antd'
-
+import {Link} from 'react-router-dom'
 import './HeadNav.css'
 import {GithubOutlined} from '@ant-design/icons';
 export default class HeadNav extends Component{
     state = {
         current: 'home'
+    }
+    handleClick = (e)=>{
+        this.setState({current:e.key})
     }
     render(){
         return (
@@ -18,10 +21,9 @@ export default class HeadNav extends Component{
                     <div className="nav-list-wrap">
                         <Menu mode="horizontal">
                                 <Menu.Item key="home">
-                                    首页
+                                    <Link to="/">首页</Link>
                                 </Menu.Item>
                                 <Menu.Item key="aboutme">
-                                    关于我
                                 </Menu.Item>
                                 <Menu.Item key="articles">
                                     所有文章
