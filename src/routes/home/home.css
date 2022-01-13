@@ -1,0 +1,11 @@
+#left-nav{
+    width:40%;
+    background-color:#aaa;
+    height: 100%;
+}
+#right-page{
+    
+}
+#home{
+    display:flex;
+}

@@ -23,3 +23,4 @@ export default class RouterWrap extends Component{
     }
 }
 // export default RouterWrap
+//组件名要大写！

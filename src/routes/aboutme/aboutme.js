@@ -55,9 +55,23 @@ class Aboutme extends Component{
                                                             <li>React/Create-React-App/Reate-Router</li>
                                                             <li>Less</li>
                                                             <li>Ant-Design</li>
+                                                            <li>React-markdown</li>
                                                             <li><a href="">教程</a></li>
                                                         </ul>
                                                         <li>课程评价微信小程序</li>
+                                                        <ul>待续</ul>
+                                                        <li>静态页面仿写</li>
+                                                        <ul>电商页面仿写</ul>
+                                                        <ul>使用的技术栈
+                                                            <li>JavaScript+HTML+CSS</li>    
+                                                        </ul>             
+                                                        <li>音乐-键盘交互</li>
+                                                        <ul>
+                                                            <li>使用JavaScript响应键盘敲击事件，播放音乐</li>
+                                                            <li>在canvas画布上随机生成小球</li>
+                                                            <li>响应屏幕大小变化事件</li>
+                                                            <li><a href="https://github.com/YuMeng2v/web-project">项目地址</a></li>
+                                                        </ul>                                       
                                                     </ul>
                                                 </td>
                                             </tr>
