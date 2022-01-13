@@ -11,6 +11,7 @@ function importAll(r){
 }
 //读取markdown 文件
 const markdownContext = require.context('../articles/01/',false,/\.md$/);
+console.log(markdownContext);
 const markdownFiles = markdownContext.keys().map((filename)=>markdownContext(filename))
 console.log('files:',markdownFiles);
 
@@ -45,6 +46,7 @@ class OneMd extends Component {
                                         <div className="card" key={idx}>
                                             <div className="card-content">
                                                 <div className="content">
+                                                    <a><img src=""></img></a>
                                                     <ReactMarkdown>{post}</ReactMarkdown>
                                                 </div>
                                             </div>
