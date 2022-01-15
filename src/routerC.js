@@ -56,7 +56,7 @@ class RouterContent extends Component {
                                                     {//
                                                     }
                                                     <img src={demo2}></img>
-                                                    <Link to={`${idx}`} component={<HeadNav/>}></Link>
+                                                    <Link to={`/articles/${idx}`} component={<div><HeadNav></HeadNav><div>{post}</div></div>}></Link>
                                                     {/*
                                                         <ReactMarkdown>{post}</ReactMarkdown>
                                                     */}   
@@ -67,17 +67,6 @@ class RouterContent extends Component {
                                     ))
                                 }
                                 </HashRouter>
-                                
-                                 {
-                                            //basic idea
-                                            //<RouterWrap>
-                                            //      <HashRouter>
-                                                        //<Route path="">
-                                                        //</Route>
-                                            //      </HashRouter>
-                                            // 可不可以生成route的同时，生成对应link
-                                            // 所以都放在file.js组件文件夹下面
-                                        }
                             </div>
                         </section>
                 </Fragment>

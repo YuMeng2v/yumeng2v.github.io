@@ -10,12 +10,20 @@ export default class RouterWrap extends Component{
     render(){
         return (
             <div id="router">
+                {
+                    //写一个动态路由
+                }
                 <HashRouter>
                     <Routes>
                         <Route path="/" element={<Home/>} exact/>
-                        <Route path="aboutme" element={<Aboutme/>} />
-                        <Route path="articleclass" element={<ArticleClass/>} />
-                        <Route path="articles" element={<Articles/>} />
+                        <Route path="/aboutme" element={<Aboutme/>} />
+                        <Route path="/articleclass" element={<ArticleClass/>} />
+                        <Route path="/articles/" element={<Articles/>} />
+                        <Route path="/:id" element={<Articles/>}/>
+                        {
+                            //动态路由+动态组件
+                            //<Route path="/:" element={}/>
+                        }
                     </Routes>
                 </HashRouter>
             </div>    

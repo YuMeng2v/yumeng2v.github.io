@@ -3,10 +3,6 @@ import HeadNav from '../../common/HeadNav';
 import './home.css';
 import OneMd from '../../components/file';
 import {HashRouter, Route, Routes} from 'react-router-dom'
-//const glob = require('glob');
-//const mdfiles = '../../articles'
-//const fs1 = require('fs-extra')
-//应该在这儿读取全部文件夹
 class home extends Component{
     constructor(props){
         super(props)
@@ -20,9 +16,6 @@ class home extends Component{
                     <HeadNav/> 
                     <div id="page-content">
                         <OneMd/>
-                        {
-                        //<OneMd />
-                        }
                     </div>
                 </div>
             </div>    

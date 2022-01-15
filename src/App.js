@@ -7,10 +7,6 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          {
-            //routerWrap for 上方导航栏
-            //routercontent for 下方跳转连接 
-          }
           <RouterWrap/>
         </div>
       </header>
