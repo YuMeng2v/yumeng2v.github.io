@@ -4,14 +4,20 @@ import { Fragment } from 'react/cjs/react.production.min';
 //import AppMarkdown from '../articles/01/try1.md'
 import Helmet from 'react-helmet'
 import './file.css'
+import {Link} from 'react-router-dom'
+import HeadNav from '../common/HeadNav'
+import demo2 from '../assets/demo2.jpg'
+import {HashRouter,Route,Routes} from 'react-router-dom'
 //通过import + fetch的方式，成功读取到了文件
 // 不import ，fetch到的就是最后的页面
 function importAll(r){
     r.keys.forEach(r);
 }
 //读取markdown 文件
-const markdownContext = require.context('../articles/01/',false,/\.md$/);
+const markdownContext = require.context('../articles/markdown',false,/\.md/);
 console.log(markdownContext);
+//读取images对应的images文件
+const markdownContext1 = require.context('../articles/images',false,/\.png/);
 const markdownFiles = markdownContext.keys().map((filename)=>markdownContext(filename))
 console.log('files:',markdownFiles);
 
@@ -37,20 +43,27 @@ class OneMd extends Component {
         return(
                 <Fragment>
                         <section className="article-title">
-                            按时间排序时间
+                            {
+                                //按时间排序时间
+                            }
                         </section>
                         <section className="article-content">
                             <div className='containers'>
+                                {//配置路由
+                                }
+
+                                <Routes>
                                 {
                                     posts.map((post,idx)=>(
-                                        <div className="card" key={idx}>
-                                            <div className="card-content">
-                                                <div className="content">
-                                                    <a><img src=""></img></a>
-                                                    <ReactMarkdown>{post}</ReactMarkdown>
-                                                </div>
-                                            </div>
-                                        </div>
+                                         <Route key={idx} path={`/${idx}`} component={<div><HeadNav/><div>{post}</div></div>}></Route>            
+                                    ))
+                                }
+                                </Routes> 
+                                {
+                                    posts.map((post,idx)=>(
+                                        <Link to={`/${idx}`}>
+                                            <img src={demo2}></img>
+                                        </Link>                                  
                                     ))
                                 }
                             </div>

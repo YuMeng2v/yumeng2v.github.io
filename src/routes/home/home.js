@@ -2,9 +2,11 @@ import {Component} from 'react';
 import HeadNav from '../../common/HeadNav';
 import './home.css';
 import OneMd from '../../components/file';
+import {HashRouter, Route, Routes} from 'react-router-dom'
 //const glob = require('glob');
 //const mdfiles = '../../articles'
 //const fs1 = require('fs-extra')
+//应该在这儿读取全部文件夹
 class home extends Component{
     constructor(props){
         super(props)
@@ -14,20 +16,13 @@ class home extends Component{
     render(){
         return (
             <div id="home">
-                <div id="left-nav">
-                    {
-                        //写一个可以折叠的面板
-                        //固定宽度也行
-                    }
-                    我难道无法显示？
-                </div>
                 <div id="right-page">
                     <HeadNav/> 
                     <div id="page-content">
+                        <OneMd/>
                         {
-                            //写一个router
+                        //<OneMd />
                         }
-                        <OneMd />
                     </div>
                 </div>
             </div>    
