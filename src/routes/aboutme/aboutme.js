@@ -52,7 +52,7 @@ class Aboutme extends Component{
                                                     <ul>
                                                         <li>个人博客搭建</li>
                                                         <ul>使用的技术栈
-                                                            <li>React/Create-React-App/Reate-Router</li>
+                                                            <li>React/Create-React-App/Reate-Router/React-Redux</li>
                                                             <li>Less</li>
                                                             <li>Ant-Design</li>
                                                             <li>React-markdown</li>
