@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfb3e24f.css",
-    "main.js": "/static/js/main.36dd496a.js",
+    "main.css": "/static/css/main.58c5cab6.css",
+    "main.js": "/static/js/main.1a3b6aa3.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
+    "static/media/demo2.jpg": "/static/media/demo2.84762f5d104c602aad16.jpg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "static/media/try1 - 副本 (2).md": "/static/media/try1 - 副本 (2).8b926eb627156782573f.md",
-    "static/media/try1 - 副本 (3).md": "/static/media/try1 - 副本 (3).8b926eb627156782573f.md",
-    "static/media/try1 - 副本.md": "/static/media/try1 - 副本.8b926eb627156782573f.md",
-    "static/media/try1.md": "/static/media/try1.8b926eb627156782573f.md",
-    "main.cfb3e24f.css.map": "/static/css/main.cfb3e24f.css.map",
-    "main.36dd496a.js.map": "/static/js/main.36dd496a.js.map",
+    "static/media/1 - 副本 (2).md": "/static/media/1 - 副本 (2).ca149510382063202a89.md",
+    "static/media/1 - 副本.md": "/static/media/1 - 副本.ca149510382063202a89.md",
+    "static/media/1.md": "/static/media/1.ca149510382063202a89.md",
+    "main.58c5cab6.css.map": "/static/css/main.58c5cab6.css.map",
+    "main.1a3b6aa3.js.map": "/static/js/main.1a3b6aa3.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfb3e24f.css",
-    "static/js/main.36dd496a.js"
+    "static/css/main.58c5cab6.css",
+    "static/js/main.1a3b6aa3.js"
   ]
 }
