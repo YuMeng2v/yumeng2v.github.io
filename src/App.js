@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import RouterWrap from './router'
-import RouterContent from './routerC'
+
 function App() {
   return (
     <div className="App">
