@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Menu} from 'antd'
 import {Link} from 'react-router-dom'
 import './HeadNav.css'
-import {LoadingOutlined} from '@ant-design/icons';
+import {RiseOutlined} from '@ant-design/icons';
 export default class HeadNav extends Component{
     state = {
         current: 'home'
@@ -16,7 +16,7 @@ export default class HeadNav extends Component{
             <div id="HeadNav">
                 <div className="nav-wrap">
                     <div className="nav-logo-wrap">
-                    <LoadingOutlined   type="global" className="nav-logo"/>
+                    <RiseOutlined   type="global" className="nav-logo"/>
                     </div>
                     <div className="nav-list-wrap">
                         <Menu mode="horizontal">
