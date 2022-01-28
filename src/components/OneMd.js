@@ -11,26 +11,26 @@ function importAll(r){
 }
 //require.context： 代表达式的require语句
 //
-
 const markdownContext = require.context('../articles/markdown',false,/\.md/);
 const markdownContext1 = require.context('../articles/images',false,/\.png/);
 const markdownFiles = markdownContext.keys().map((filename)=>markdownContext(filename))
-console.log('Onemd',markdownFiles[0]);
+console.log('Onemd',markdownFiles);
 
 let contents = [];
 class OneMd extends Component {
     constructor(props){
         super(props)  
         //初始化状态，每次刷新也会调用这个函数
-        this.state = {src:0,posts:''};
+        this.state = {src:-1,posts:''};
     }
     componentWillMount(){
+        console.log('match:',this.props.match)
         if(this.props.match!=undefined){
             this.setState({src:Number(this.props.match.url.split('/')[2])})
         }
     }
     componentDidMount(){
-        fetch(markdownFiles[this.state.src]).then(res=>res.text()).then(text=>this.setState({posts:text}));
+        if(this.state.src!=-1)fetch(markdownFiles[this.state.src]).then(res=>res.text()).then(text=>this.setState({posts:text}));
     }
     componentDidUpdate(){
         //const content = fileReader.readAsText(markdownFiles[this.state.src])
@@ -41,8 +41,14 @@ class OneMd extends Component {
     render(){
         return  (
             <div>
+                <div className="markdown-headNav">
                     <HeadNav/>
-                    <ReactMarkdown source={this.state.posts}/>
+                </div>
+                <div className="markdown-body">
+                    <div className="markdown-content">
+                        <ReactMarkdown source={this.state.posts}/>
+                    </div>
+                </div>
             </div>
             )
         }

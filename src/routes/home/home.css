@@ -3,9 +3,16 @@
     background-color:#aaa;
     height: 100%;
 }
-#right-page{
-    
+
+img{
+    height: 150px;
+    width:200px;
 }
-#home{
-    
+.content-lists{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.content-item{
+    padding: 80px;
 }

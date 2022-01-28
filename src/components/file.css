@@ -1,15 +1,14 @@
-.content{
-    width:200px;
-    height:200px;    
-}
-.article-title{
-    width:100px;
-}
-.containers{
-    margin:20px 20px 20px 20px;
+.markdown-body{
     display:flex;
 }
-img {
-    height:200px;
-    width:250px;
+.markdown-headNav{
+
+}
+.markdown-body{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.markdown-content{
+    
 }

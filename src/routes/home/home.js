@@ -3,17 +3,13 @@ import './home.css';
 import OneMd from '../../components/OneMd';
 import {Link} from 'react-router-dom';
 import demo2 from '../../assets/demo2.jpg';
+import HeadNav from '../../common/HeadNav';
 /*
     读取文章 配置路由
 */
-function importAll(r){
-    r.keys.forEach(r);
-}
 const markdownContext = require.context('../../articles/markdown',false,/\.md/);
-const markdownContext1 = require.context('../../articles/images',false,/\.png/);
 const markdownFiles = markdownContext.keys().map((filename)=>markdownContext(filename))
-//console.log('files:',markdownFiles);
-
+console.log('home:',markdownFiles);
 class home extends Component{
     constructor(props){
         super(props)
@@ -22,14 +18,20 @@ class home extends Component{
         return (
             <div id="home">
                 <div id="right-page">
-                    <OneMd/>  
+                    <HeadNav/>
+                    <div className="content-lists">
                     {
-                        markdownFiles.map((_,index)=>
-                            <Link to={{pathname:`/article/${index}`, state:{id:index}}} >
-                                <img src={demo2}></img>
-                            </Link>   
+
+                        markdownFiles.map((file_path,index)=>
+                            <div className="content-item" key={index}>
+                            <Link to={{pathname:`/article/${index}`}} state={file_path} >
+                                <img src={require('../../assets/demo2.jpg')}></img>
+                                <h2 style={{textAlign:'center'}}>{file_path.split('/')[3].split('.')[0]}</h2>
+                            </Link>
+                            </div>   
                         )
                     }
+                    </div>
                 </div>
             </div>    
         )
