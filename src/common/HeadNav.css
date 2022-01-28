@@ -2,6 +2,7 @@
 #HeadNav{
     height: 50px;
     background-color:burlywood;
+    width: 100%;
 }
 .nav-wrap{
         width:1200px;

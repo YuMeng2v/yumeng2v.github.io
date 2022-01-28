@@ -19,18 +19,19 @@ class home extends Component{
             <div id="home">
                 <div id="right-page">
                     <HeadNav/>
+                    <div className='contents'>
                     <div className="content-lists">
                     {
-
                         markdownFiles.map((file_path,index)=>
                             <div className="content-item" key={index}>
                             <Link to={{pathname:`/article/${index}`}} state={file_path} >
                                 <img src={require(`../../articles/images/${file_path.split('/')[3].split('.')[0]}.jpg`)}></img>
-                                <h2 style={{textAlign:'center',fontSize:'12px'}}>{file_path.split('/')[3].split('.')[0]}</h2>
+                                <h2 style={{textAlign:'center',fontSize:'12px'}}>{index}.{file_path.split('/')[3].split('.')[0]}</h2>
                             </Link>
                             </div>   
                         )
                     }
+                    </div>
                     </div>
                 </div>
             </div>    

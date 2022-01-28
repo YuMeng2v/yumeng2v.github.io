@@ -8,15 +8,20 @@ img{
     height: 150px;
     width:350px;
 }
+.right-page{
+    width: 100%;
+}
 img:hover{
-    transform:scale(1.1)
+    transform:scale(1.05)
+}
+.contents{
+
 }
 .content-lists{
-    display:flex;
     flex-wrap: wrap;
+    justify-content: center;
+    display:flex;
 }
 .content-item{
-    width: calc((100% - 50px) / 3);
-    text-align:center;
-    
+
 }
