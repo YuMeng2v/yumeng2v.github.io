@@ -1,9 +1,8 @@
 import {Component} from 'react';
 import './home.css';
-import OneMd from '../../components/OneMd';
 import {Link} from 'react-router-dom';
-import demo2 from '../../assets/demo2.jpg';
 import HeadNav from '../../common/HeadNav';
+import { Divider } from 'antd';
 /*
     读取文章 配置路由
 */
@@ -20,18 +19,20 @@ class home extends Component{
                 <div id="right-page">
                     <HeadNav/>
                     <div className='contents'>
-                    <div className="content-lists">
-                    {
-                        markdownFiles.map((file_path,index)=>
-                            <div className="content-item" key={index}>
-                            <Link to={{pathname:`/article/${index}`}} state={file_path} >
-                                <img src={require(`../../articles/images/${file_path.split('/')[3].split('.')[0]}.jpg`)}></img>
-                                <h2 style={{textAlign:'center',fontSize:'12px'}}>{index}.{file_path.split('/')[3].split('.')[0]}</h2>
-                            </Link>
-                            </div>   
-                        )
-                    }
-                    </div>
+                        <div className="content-lists">
+                        {
+                            markdownFiles.map((file_path,index)=>
+                                <div className="content-item" key={index}>
+                                <Link to={{pathname:`/article/${index}`}} state={file_path} >
+                                    <img src={require(`../../articles/images/${file_path.split('/')[3].split('.')[0]}.jpg`)}></img>
+                                    <h2 style={{textAlign:'center',fontSize:'12px'}}>{index
+                                    +1}.{file_path.split('/')[3].split('.')[0]}</h2>
+                                </Link>
+                                <Divider/>
+                                </div>   
+                            )
+                        }
+                        </div>
                     </div>
                 </div>
             </div>    
