@@ -21,17 +21,17 @@ export default class HeadNav extends Component{
                     <div className="nav-list-wrap">
                         <Menu mode="horizontal">
                                 <Menu.Item key="home">
-                                    <Link to="/">首页</Link>
+                                    <Link to="/">全部文章</Link>
                                 </Menu.Item>
                                 <Menu.Item key="aboutme">
                                     <Link to="/aboutme">关于我</Link>
                                 </Menu.Item>
-                                <Menu.Item key="articles">
+                                {/* <Menu.Item key="articles">
                                     <Link to="/articles">所有文章</Link>
                                 </Menu.Item>
                                 <Menu.Item key="articleClass">
                                     <Link to="/articleclass">文章分类</Link>
-                                </Menu.Item>
+                                </Menu.Item> */}
                         </Menu>
                     </div>
                 </div>

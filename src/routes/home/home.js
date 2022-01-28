@@ -25,8 +25,8 @@ class home extends Component{
                         markdownFiles.map((file_path,index)=>
                             <div className="content-item" key={index}>
                             <Link to={{pathname:`/article/${index}`}} state={file_path} >
-                                <img src={require('../../assets/demo2.jpg')}></img>
-                                <h2 style={{textAlign:'center'}}>{file_path.split('/')[3].split('.')[0]}</h2>
+                                <img src={require(`../../articles/images/${file_path.split('/')[3].split('.')[0]}.jpg`)}></img>
+                                <h2 style={{textAlign:'center',fontSize:'12px'}}>{file_path.split('/')[3].split('.')[0]}</h2>
                             </Link>
                             </div>   
                         )

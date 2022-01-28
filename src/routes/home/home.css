@@ -6,13 +6,17 @@
 
 img{
     height: 150px;
-    width:200px;
+    width:350px;
+}
+img:hover{
+    transform:scale(1.1)
 }
 .content-lists{
     display:flex;
-    justify-content:center;
     flex-wrap: wrap;
 }
 .content-item{
-    padding: 80px;
+    width: calc((100% - 50px) / 3);
+    text-align:center;
+    
 }
