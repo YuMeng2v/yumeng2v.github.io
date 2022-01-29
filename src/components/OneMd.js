@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import ReactMarkdown from 'react-markdown'
 import './file.css'
 import HeadNav from '../common/HeadNav'
+import Foott from '../common/Foott'
 //import * as fs from 'fs';//fs in node not in browser
 //如何让子组件知道自己是哪一篇
 import {useLocation} from 'react-router-dom';
@@ -49,6 +50,7 @@ class OneMd extends Component {
                         <ReactMarkdown source={this.state.posts}/>
                     </div>
                 </div>
+                <Foott/>
             </div>
             )
         }

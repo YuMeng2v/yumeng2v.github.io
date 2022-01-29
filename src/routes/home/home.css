@@ -17,9 +17,10 @@ img:hover{
     transform:scale(1.05)
 }
 .contents{
-    width: 80%;
+    width: 60%;
     position: relative;
-    left:10%
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .content-lists{
     flex-wrap: wrap;
