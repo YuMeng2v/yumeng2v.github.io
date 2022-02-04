@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.5b136664.css",
-    "main.js": "/static/js/main.2c95be29.js",
+    "main.js": "/static/js/main.5f11e85c.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
     "static/media/闭包.jpg": "/static/media/闭包.beaf97652791d1c63406.jpg",
+    "static/media/Ajax.jpg": "/static/media/Ajax.096a154f80244b743526.jpg",
     "static/media/事件绑定.jpg": "/static/media/事件绑定.9e00f87fd014a0d4f4d9.jpg",
     "static/media/JS语言特性.jpg": "/static/media/JS语言特性.26a1c901a4fbbc43874d.jpg",
     "static/media/浏览器存储(缓存).jpg": "/static/media/浏览器存储(缓存).6f51857d07b803ccdf67.jpg",
@@ -14,6 +15,7 @@
     "static/media/CSS补充(伪类伪元素等).jpg": "/static/media/CSS补充(伪类伪元素等).38d3f45c2695d0df20e7.jpg",
     "static/media/HTTP&TCP.jpg": "/static/media/HTTP&TCP.bf52554542c19e271ede.jpg",
     "static/media/事件委托.jpg": "/static/media/事件委托.13f58ec194ddf733e98f.jpg",
+    "static/media/Ajax.md": "/static/media/Ajax.626c310962ff5c8a43a8.md",
     "static/media/浏览器存储(缓存).md": "/static/media/浏览器存储(缓存).473a3741535253f03eb5.md",
     "static/media/BFC.md": "/static/media/BFC.5c3df3b4703b52d3938e.md",
     "static/media/JavaScript原型链.md": "/static/media/JavaScript原型链.42267058229c508783b0.md",
@@ -27,11 +29,11 @@
     "static/media/数据结构与算法补充.md": "/static/media/数据结构与算法补充.0a0d67b11f5293f18644.md",
     "index.html": "/index.html",
     "main.5b136664.css.map": "/static/css/main.5b136664.css.map",
-    "main.2c95be29.js.map": "/static/js/main.2c95be29.js.map",
+    "main.5f11e85c.js.map": "/static/js/main.5f11e85c.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b136664.css",
-    "static/js/main.2c95be29.js"
+    "static/js/main.5f11e85c.js"
   ]
 }
