@@ -177,6 +177,9 @@
                     response.setHeader("Access-Control-Allow-Origin","*");
                     response.setHeader("Access-Control-Allow-Origin","https://127.120.1.1:8000");
                 ```
+            *   设置选项
+                *   允许的请求：（默认get post可以）
+                *   
 
 
 
