@@ -33,3 +33,9 @@ img:hover{
     margin-right: 30px;
     font-family: "Times New Roman", Times, serif;
 }
+.load-more{
+    text-align: center;
+}
+button{
+    background-color: aliceblue;
+}

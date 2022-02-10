@@ -13,6 +13,11 @@ console.log('home:',markdownFiles);
 class home extends Component{
     constructor(props){
         super(props)
+        
+    }
+    state = {articleNum:8}
+    loadmore = ()=>{
+        this.setState({articleNum:this.state.articleNum+2})
     }
     render(){
         return (
@@ -22,20 +27,23 @@ class home extends Component{
                     <div className='contents'>
                         <div className="content-lists">
                         {
-                            markdownFiles.map((file_path,index)=>
-                                <div className="content-item" key={index}>
+                            markdownFiles.map((file_path,index)=>{
+                                return index<this.state.articleNum?<div className="content-item" key={index}>
                                 <Link to={{pathname:`/article/${index}`}} state={file_path} >
                                     <img src={require(`../../articles/images/${file_path.split('/')[3].split('.')[0]}.jpg`)}></img>
                                     <h2 style={{textAlign:'center',fontSize:'12px',paddingTop:'20px'}}>{index
                                     +1}.{file_path.split('/')[3].split('.')[0]}</h2>
                                 </Link>
                                 <Divider/>
-                                </div>   
+                                </div>:<div></div>
+                                }
                             )
                         }
                         </div>
                     </div>
-                    
+                    <div className='load-more'>
+                        <button onClick={this.loadmore}>加载更多</button>
+                    </div>
                 </div>
                 <Foott/>
             </div>    
