@@ -1,5 +1,5 @@
 # Javascript语言特性
-    0.1+0.2!=0.3
+    问题；0.1+0.2!=0.3
     解释：
     1. 十进制小数如何转二进制
     eg. 0.1
@@ -27,3 +27,22 @@
     M = 110011001100110011...0011010 // 0舍1入() 52位数
     0.1被最终存储为
     0 01111111011 110011001100110011....0011010
+### ES6如何将代码暴露出去：默认暴露与单独暴露
+    1. 单独暴露
+        a.js
+            export function a(){}
+            or 
+            function a1(){}
+            function a2(){}
+            export {a1,a2}
+        import {a} from 'a.js'
+        import {a1} from 'a.js'
+        import {a1,a2} from 'a.js'
+    2. 默认暴露
+        export default function x (){
+            console.log('lei');
+        }
+        import x from './暴露.js'
+        x()
+        
+
