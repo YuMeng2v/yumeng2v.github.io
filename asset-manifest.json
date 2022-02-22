@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.e866aa2f.css",
-    "main.js": "/static/js/main.9977d8c5.js",
+    "main.js": "/static/js/main.ab03064d.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
+    "static/media/跨域请求.jpg": "/static/media/跨域请求.1d747007c2484e804b1a.jpg",
     "static/media/闭包.jpg": "/static/media/闭包.beaf97652791d1c63406.jpg",
     "static/media/Ajax.jpg": "/static/media/Ajax.096a154f80244b743526.jpg",
     "static/media/事件绑定.jpg": "/static/media/事件绑定.9e00f87fd014a0d4f4d9.jpg",
@@ -30,12 +31,13 @@
     "static/media/数据结构与算法补充.md": "/static/media/数据结构与算法补充.0a0d67b11f5293f18644.md",
     "index.html": "/index.html",
     "static/media/React组件的通信.md": "/static/media/React组件的通信.5a83437dce20286d4e43.md",
+    "static/media/跨域请求.md": "/static/media/跨域请求.31d6cfe0d16ae931b73c.md",
     "main.e866aa2f.css.map": "/static/css/main.e866aa2f.css.map",
-    "main.9977d8c5.js.map": "/static/js/main.9977d8c5.js.map",
+    "main.ab03064d.js.map": "/static/js/main.ab03064d.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e866aa2f.css",
-    "static/js/main.9977d8c5.js"
+    "static/js/main.ab03064d.js"
   ]
 }
