@@ -132,6 +132,34 @@
         })
     }
     ```
+*   异步输出顺序
+    ```
+    new Promise(resolve=>{
+    console.log(1);
+    setTimeout(()=>console.log(2),0);
+    console.log(3);
+    Promise.resolve(1).then(resolve=>console.log(4));
+    })
+    setTimeout(x=>console.log(5),0);
+    console.log(6);
+    //1 3 6 4 2 5
+    ```
+    *  为什么Promise比setTimeout处理得快
+        Javascript 异步事件循环
+![](https://tie.pub/static/0adea2fc9a16c4cd6048f8bf1c4f088c/e0a6a/event-loop.webp)
+    
+*   call stack : LIFO，存储代码调用执行上下文，调用堆执行函数
+*   Web APIs，异步操作以及其其回调函数，等待完成
+*   task queue（任务队列）FIFO，存储着准备执行的promise，完整的promise的成功或者失败的回调在任务队列中排队
+*   event loop事件循环永久地监视调用栈是否为空，是空的话，事件循环会查看工作队列或任务队列，讲任何准备执行的回调掉到调用栈中（call stack）
+    *   调用setTimeout，记录一个timer，存储在webAPIs中
+    *   执行promise，schedule（记录）一个promise的结果，resolve或者失败的回调存储在webAPIs中
+    *   promise立即被解析，同时定时器立即被定时，定时器回调被添加到任务队列，promise回调被添加到工作队列。
+    *   事件循环event loop，调用工作队列优先于任务队列，因此promise先执行
+    *   console.log直接添加到工作栈当中去
+    
+
+
 
 
 

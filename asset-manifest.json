@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e866aa2f.css",
-    "main.js": "/static/js/main.77141319.js",
+    "main.js": "/static/js/main.9977d8c5.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
     "static/media/闭包.jpg": "/static/media/闭包.beaf97652791d1c63406.jpg",
     "static/media/Ajax.jpg": "/static/media/Ajax.096a154f80244b743526.jpg",
@@ -16,26 +16,26 @@
     "static/media/CSS补充(伪类伪元素等).jpg": "/static/media/CSS补充(伪类伪元素等).38d3f45c2695d0df20e7.jpg",
     "static/media/HTTP&TCP.jpg": "/static/media/HTTP&TCP.bf52554542c19e271ede.jpg",
     "static/media/事件委托.jpg": "/static/media/事件委托.13f58ec194ddf733e98f.jpg",
+    "static/media/promise.md": "/static/media/promise.e6db286b0a6bdb27f117.md",
     "static/media/Ajax.md": "/static/media/Ajax.0952ea5d5a22c2a1988b.md",
     "static/media/浏览器存储(缓存).md": "/static/media/浏览器存储(缓存).473a3741535253f03eb5.md",
     "static/media/BFC.md": "/static/media/BFC.5c3df3b4703b52d3938e.md",
     "static/media/JavaScript原型链.md": "/static/media/JavaScript原型链.42267058229c508783b0.md",
-    "static/media/promise.md": "/static/media/promise.dae5f1a5900ae402da88.md",
     "static/media/HTTP&TCP.md": "/static/media/HTTP&TCP.2e1a247529d692084b15.md",
     "static/media/闭包.md": "/static/media/闭包.5fb1eff52d4862a404ee.md",
     "static/media/事件委托.md": "/static/media/事件委托.2385a0eb0a388bb7b7bb.md",
-    "static/media/JS语言特性.md": "/static/media/JS语言特性.2df3cdc41e1960209a10.md",
+    "static/media/JS语言特性.md": "/static/media/JS语言特性.ca4512fda4e88d4b22ca.md",
     "static/media/事件绑定.md": "/static/media/事件绑定.06c6eac0f416c954fa53.md",
     "static/media/CSS补充(伪类伪元素等).md": "/static/media/CSS补充(伪类伪元素等).592cebaee67d59bbab49.md",
     "static/media/数据结构与算法补充.md": "/static/media/数据结构与算法补充.0a0d67b11f5293f18644.md",
     "index.html": "/index.html",
     "static/media/React组件的通信.md": "/static/media/React组件的通信.5a83437dce20286d4e43.md",
     "main.e866aa2f.css.map": "/static/css/main.e866aa2f.css.map",
-    "main.77141319.js.map": "/static/js/main.77141319.js.map",
+    "main.9977d8c5.js.map": "/static/js/main.9977d8c5.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e866aa2f.css",
-    "static/js/main.77141319.js"
+    "static/js/main.9977d8c5.js"
   ]
 }
