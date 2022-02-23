@@ -15,9 +15,12 @@ class home extends Component{
         super(props)
         
     }
-    state = {articleNum:8}
+    state = {articleNum:8,lm:"加载更多"}
     loadmore = ()=>{
         this.setState({articleNum:this.state.articleNum+2})
+        if(this.state.articleNum>=markdownFiles.length){
+            this.setState({lm:"没得啦，莫点了"})
+        }
     }
     render(){
         return (
@@ -42,7 +45,7 @@ class home extends Component{
                         </div>
                     </div>
                     <div className='load-more'>
-                        <button onClick={this.loadmore}>加载更多</button>
+                        <button onClick={this.loadmore}>{this.state.lm}</button>
                     </div>
                 </div>
                 <Foott/>
