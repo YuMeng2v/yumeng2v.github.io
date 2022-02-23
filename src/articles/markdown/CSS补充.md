@@ -49,14 +49,33 @@ https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Pse
 *   flex布局
 *   table布局
 *   grid 布局
+    * 父元素display为grid，并设置两个子grid 宽度 auto
 ### 左列不定宽，右列自适应
 *   float + overflow
 *   flex布局
 *   grid 布局
-    * 父元素display为grid，并设置两个子grid 宽度 auto
+
 ## 三列布局
 ### 左边两列定宽，右边自适应
+*   float + float + margin
+*   float + float + BFC
+*   table布局
+    *   父元素display为table
+    *   子元素display为table-cell
+    *   左边两个子元素指定width
+*   flex布局
+*   grid布局
 ### 左右定宽，中间自适应
-*   圣杯布局
 *   双飞翼布局
+    *   
+*   flex实现
+    *   left order: -1
+    *   right flex: 0 0 200px(width)
+    *   center: flex: 1
+*   flex后面的三个参数
+    *   flex-grow: 项目的放大比例
+    *   flex-shrink: 项目的缩小比例
+    *   flex-basis: 项目占据主轴空间（main - size）
+
+
  
