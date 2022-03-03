@@ -19,7 +19,7 @@ class home extends Component{
     loadmore = ()=>{
         this.setState({articleNum:this.state.articleNum+2})
         if(this.state.articleNum>=markdownFiles.length){
-            this.setState({lm:"没得啦，莫点了"})
+            this.setState({lm:"点击催稿"})
         }
     }
     render(){
