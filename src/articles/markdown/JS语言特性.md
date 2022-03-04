@@ -44,5 +44,21 @@
         }
         import x from './暴露.js'
         x()
-        
+### JavaScript数据类型
+*   基本数据类型
+    *   直接存储在栈中的数据
+    *   string / number / Boolean / null / undefined / symbol
+*   引用数据类型（object / array）
+    *   存储在栈中的是对象的引用（地址指针），真实的数据存储在堆内存里
+    *   引用数据类型才有深拷贝、浅拷贝的概念
+    *   浅拷贝复制引用，指向同一个内存
+    *   深拷贝，另外创建一个一模一样的对象，不共享内存，修改新对象不会影响原对象
+*   值数组的深拷贝
+    *   拓展运算符
+    *   [].concat(); [].slice()
+*   深拷贝单层对象
+    *   ES6: newObj = Object.assign({},Obj)
+    *   ES6：newObj = [...Obj]
+*   深拷贝多层对象
+    *   newObj = JSON.parse(JSON.stringify())
 
