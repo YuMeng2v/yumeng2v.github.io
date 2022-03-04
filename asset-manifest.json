@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e866aa2f.css",
-    "main.js": "/static/js/main.b876f0c3.js",
+    "main.js": "/static/js/main.4649eb61.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
     "static/media/跨域请求.jpg": "/static/media/跨域请求.1d747007c2484e804b1a.jpg",
     "static/media/闭包.jpg": "/static/media/闭包.beaf97652791d1c63406.jpg",
@@ -18,6 +18,7 @@
     "static/media/CSS补充.jpg": "/static/media/CSS补充.38d3f45c2695d0df20e7.jpg",
     "static/media/HTTP&TCP.jpg": "/static/media/HTTP&TCP.bf52554542c19e271ede.jpg",
     "static/media/事件委托.jpg": "/static/media/事件委托.13f58ec194ddf733e98f.jpg",
+    "static/media/canvas.jpg": "/static/media/canvas.f37c336a7abf87ea275c.jpg",
     "static/media/promise.md": "/static/media/promise.b8a8cec65a1a7c7301db.md",
     "static/media/Ajax.md": "/static/media/Ajax.0952ea5d5a22c2a1988b.md",
     "static/media/浏览器存储(缓存).md": "/static/media/浏览器存储(缓存).473a3741535253f03eb5.md",
@@ -25,21 +26,23 @@
     "static/media/JavaScript原型链.md": "/static/media/JavaScript原型链.42267058229c508783b0.md",
     "static/media/HTTP&TCP.md": "/static/media/HTTP&TCP.2e1a247529d692084b15.md",
     "static/media/闭包.md": "/static/media/闭包.5fb1eff52d4862a404ee.md",
+    "static/media/JS语言特性.md": "/static/media/JS语言特性.4ec123c555a2e455a7c2.md",
     "static/media/CSS补充.md": "/static/media/CSS补充.3059703ff1d4178bb7c9.md",
     "static/media/事件委托.md": "/static/media/事件委托.2385a0eb0a388bb7b7bb.md",
     "static/media/浏览器事件循环.md": "/static/media/浏览器事件循环.7f49345c8c11ee1b864e.md",
-    "static/media/JS语言特性.md": "/static/media/JS语言特性.ca4512fda4e88d4b22ca.md",
     "static/media/跨域请求.md": "/static/media/跨域请求.b2bea63c408bb0aaa0c3.md",
     "static/media/事件绑定.md": "/static/media/事件绑定.06c6eac0f416c954fa53.md",
+    "static/media/canvas.md": "/static/media/canvas.fb0059b72390267ec067.md",
     "static/media/数据结构与算法补充.md": "/static/media/数据结构与算法补充.0a0d67b11f5293f18644.md",
     "index.html": "/index.html",
     "static/media/React组件的通信.md": "/static/media/React组件的通信.5a83437dce20286d4e43.md",
+    "static/media/浏览器.md": "/static/media/浏览器.31d6cfe0d16ae931b73c.md",
     "main.e866aa2f.css.map": "/static/css/main.e866aa2f.css.map",
-    "main.b876f0c3.js.map": "/static/js/main.b876f0c3.js.map",
+    "main.4649eb61.js.map": "/static/js/main.4649eb61.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e866aa2f.css",
-    "static/js/main.b876f0c3.js"
+    "static/js/main.4649eb61.js"
   ]
 }
