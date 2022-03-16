@@ -15,8 +15,15 @@ RAF的特点
         *   生成多个canvas实例
         *   使用z-index决定堆叠的次序   
     *   离屏canvas
-        *   使用drawImage，将待绘制的区域提前裁剪好
+        *   myx.offscreenCanvas
+            *   设置高和宽
+        *   myx.offscreenContext
+        *   myx.render()
+        *   使用drawImage，将待绘制的区域提前裁剪好，也就是不要在drawImage时缩放图像
+        *   相似的图像，操作，提前绘制好
     *   只渲染（可见or部分）canvas
         *   计算可见的部分
+    *   避免使用浮点数坐标点而使用整数
+        *   画一个没有整数坐标点的对象时会发生子像素渲染
 
 
