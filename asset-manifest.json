@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e866aa2f.css",
-    "main.js": "/static/js/main.a9ea3b96.js",
+    "main.js": "/static/js/main.fa553096.js",
     "static/js/787.edd59a96.chunk.js": "/static/js/787.edd59a96.chunk.js",
     "static/media/jsv8.png": "/static/media/jsv8.f64fa74beb81651893a9.png",
     "static/media/跨域请求.jpg": "/static/media/跨域请求.1d747007c2484e804b1a.jpg",
@@ -27,9 +27,9 @@
     "static/media/JavaScript原型链.md": "/static/media/JavaScript原型链.42267058229c508783b0.md",
     "static/media/浏览器事件循环.md": "/static/media/浏览器事件循环.833e1776b8ee1f272f66.md",
     "static/media/HTTP&TCP.md": "/static/media/HTTP&TCP.2e1a247529d692084b15.md",
+    "static/media/移动端适配.md": "/static/media/移动端适配.1db4065eb68e21b753e2.md",
     "static/media/闭包.md": "/static/media/闭包.5fb1eff52d4862a404ee.md",
     "static/media/JS语言特性.md": "/static/media/JS语言特性.4ec123c555a2e455a7c2.md",
-    "static/media/移动端适配.md": "/static/media/移动端适配.8ed7c295ab9b7a4966e0.md",
     "static/media/CSS补充.md": "/static/media/CSS补充.3059703ff1d4178bb7c9.md",
     "static/media/事件委托.md": "/static/media/事件委托.2385a0eb0a388bb7b7bb.md",
     "static/media/跨域请求.md": "/static/media/跨域请求.b2bea63c408bb0aaa0c3.md",
@@ -41,11 +41,11 @@
     "static/media/浏览器.md": "/static/media/浏览器.31d6cfe0d16ae931b73c.md",
     "static/media/深究React.md": "/static/media/深究React.31d6cfe0d16ae931b73c.md",
     "main.e866aa2f.css.map": "/static/css/main.e866aa2f.css.map",
-    "main.a9ea3b96.js.map": "/static/js/main.a9ea3b96.js.map",
+    "main.fa553096.js.map": "/static/js/main.fa553096.js.map",
     "787.edd59a96.chunk.js.map": "/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e866aa2f.css",
-    "static/js/main.a9ea3b96.js"
+    "static/js/main.fa553096.js"
   ]
 }
