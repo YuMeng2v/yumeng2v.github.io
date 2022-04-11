@@ -1,0 +1,41 @@
+## React工作流
+*   声明式UI库，将State转换为页面结构（虚拟DOM结构），交给浏览器渲染。当state发生改变时，react会先进性调和（reconciliation）阶段，调和阶段结束后立刻进入提交阶段（commit）阶段，提交阶段结束后，新state对应的页面才被展示出来
+*   react调和阶段
+    *   计算出state对应的虚拟DOM结构
+        *   调用类组件自身的render等事件
+    *   寻找将虚拟DOM结构修改为目标虚拟DOM结构的最优更新方案
+        *   react内部实现的diff算法，diff算法记录虚拟DOM的更新方式
+    *   按照深度优先遍历虚拟DOM树的方式，在一个虚拟DOM上完成两件事后，计算下一个虚拟DOM
+*   React的提交阶段
+    *   将调和阶段记录的更新方案应用到DOM中
+    *   调用暴露给开发者的钩子方法，如componentDidUpdate、useLayoutEffect等
+*   优化目标：
+    *   调和阶段的计算目标虚拟DOM结构过程
+        * render过程，触发react组件的render过程有三种方式，forceUpdate、State更新、父组件Render触发子组件Render
+    *   其他？调和阶段的Diff过程和提交阶段的应用更新方案到DOM都属于REACT的内部实现
+*   优化技巧
+    *   跳过不必要的组件更新
+        *   PureComponent、React.memo
+            *   如果只有父组件状态更新，即使父组件传给子组件的所有props都没有更新，子组件也会重新渲染
+            *   PC是对类组件的Props和State进行浅比较
+            *   React.memo是对函数组件的Props进行浅比较
+        *   useMemo, useCallback实现稳定的Props值
+            *   如果传递的函数或者状态都是新的引用，PureComponent和React.memo优化就会失效，需要使用useMemo和useCallback生成稳定值，再使用PC，memo
+        *   状态下放，缩小状态影响范围
+            *   如果一个状态只在某部分子树中使用，可以将这部分子树提取为组件，将该状态移动到该组件内部
+        *   列表项使用key属性
+            *   diff比较  
+    *   提交阶段优化
+        *   避免在didMount、didUpdate中更新组件state
+            *   提交阶段第二步为执行提交阶段钩子，它们的执行会阻塞浏览器更新页面，在提交阶段钩子函数中更新state，会再次触发组件的更新流程
+    *   前端通用优化    
+        *   组件按需挂载
+            *   懒加载
+                *   webpack动态引入
+                *   React.lazy
+            *   懒渲染
+                *   组件进入或者即将进入可视区域时才渲染组件，常见的组件Modal/Drawer等，等visible属性为true时才渲染组件内容
+            *   虚拟列表
+            *   批量更新
+                *   setState在react管理的事件回调和生命周期中，异步（批量更新）。在其他时候setState是同步的 
+            
